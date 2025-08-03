@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zouq Al Khamees Restaurant | Frontend | Responsive</title>
     <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="bg-gray-200 text-gray-800">
+<body class="bg-gray-100 text-gray-800">
     <header>
-        <nav class="bg-white shadow">
+        <nav class="bg-gray-800 text-white">
             <div class="container mx-auto flex justify-between items-center p-4">
-                <div class="logo">
-                    <a href="#" class="text-2xl font-bold text-gray-800">Zouq Al Khamees</a>
+                <div class="logo flex items-center space-x-4">
+                    <img src="./assets/images/logo.png" alt="Zouq Al Khamees Logo" class="w-12 h-12">
+                    <a href="#" class="text-2xl font-bold text-white">Zouq Al Khamees</a>
                 </div>
                 <div class="flex space-x-4">
                     <p>Karachi, Pakistan</p>
@@ -29,18 +31,193 @@
         </div>
     </section>
 
-    <section class="menu" id="menu">
-        <div class="container mx-auto p-8">
-            <h2 class="text-3xl font-bold text-center mb-8">Our Menu</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="menu-item bg-white shadow-xl rounded-lg p-4 cursor-pointer">
-                    <img src="./assets/images/dish-1.jpg" alt="Dish 1" class="w-full h-48 object-cover rounded-t-lg">
-                    <h3 class="text-xl font-semibold mt-4">Dish Name 1</h3>
-                    <p class="text-gray-600 mt-2">Description of the dish goes here.</p>
-                    <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+    <section class="menu pb-10" id="menu">
+        <div class="w-full mb-10 shadow-lg sticky top-0 z-50 bg-white">
+            <ul class="items-bar flex flex-nowrap gap-4 overflow-x-auto space-x-4 p-4 no-scrollbar">
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">CURRY MASALA - CHICKEN</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">CURRY MASALA - MUTTON</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">CURRY MASALA - BEEF</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">VEGETARIAN</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">DAAL</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">RICE</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">SEA FOOD</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">CHICKEN BBQ</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">CHICKEN AL FAHAM</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">MUTTON / BEEF BBQ</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">SPECIAL KARAHI</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">BUTT DISHES</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">BREAKFAST</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">ROTI / BREADS</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">PAKISTANI SWEETS</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">DESSERTS</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">APPETIZERS</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">SOUPS</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">DRINKS</a></li>
+                <li class="min-w-[150px] flex items-center justify-center bg-white shadow-lg py-2 px-4 rounded-lg"><a href="#">FAST FOOD</a></li>
+            </ul>
+        </div>
+
+        <div class="container mx-auto rounded-lg shadow-lg">
+            <div class="menu-category p-6 bg-gray-100 rounded-lg mb-6">
+                <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
+                    <h2 class="text-2xl font-medium text-gray-600">CURRY MASALA - CHICKEN ITEMS</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Chicken Tandoori Masala</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Chicken Tikka Masala</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Butter Chicken</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Chicken Curry</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Chicken Green Curry</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Chicken White Karahi</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Chicken Karahi</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Chicken Green Chili</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Chicken Boneless Handi</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Chicken Shashlik Masala</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Chicken Shashlik Gravy</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Chicken Shorba</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Egg Kofta Chicken</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Haleem Chicken/Beef</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category p-6 bg-gray-100 rounded-lg mb-6">
+                <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
+                    <h2 class="text-2xl font-medium text-gray-600">CURRY MASALA - MUTTON ITEMS</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Mutton Fresh Qeema</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Mutton Fresh Masala</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Mutton Fresh White Karahi</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item flex justify-between items-center bg-white shadow-xl rounded-lg p-4 cursor-pointer">
+                        <img src="./assets/images/dish-1.jpg" alt="Dish" class="w-30 h-20 object-cover rounded-lg">
+                        <div class="flex flex-col justify-center items-end">
+                            <h3 class="text-xl font-semibold">Mutton Fresh Malai Handi</h3>
+                            <span class="text-green-500 font-bold mt-2 block">$12.99</span>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
+
+
+    <footer class="flex flex-col items-center justify-around w-full py-16 text-sm bg-gray-800 text-white">
+        <div class="flex flex-col items-center">
+            <img src="./assets/images/logo.png" alt="Zouq Al Khamees Restaurant Logo" class="w-24 h-24">
+        </div>
+        <p class="mt-4 text-center">Copyright © 2025 <a href="https://prebuiltui.com">Zouq Al Khamees Restaurant</a>. All rights reservered.</p>
+        <div class="flex items-center gap-4 mt-6">
+            <a href="#" class="font-medium text-white hover:text-gray-200 transition-all">
+                order@zouqalkhamees.com
+            </a>
+            <div class="h-4 w-px bg-black/20"></div>
+            <a href="#" class="font-medium text-white hover:text-gray-200 transition-all">
+                +92 398902098
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
